@@ -8,7 +8,7 @@
     margin: 0;
 
     li {
-      padding: 0;
+      padding: 0 !important;
       margin: 0;
       list-style: none;
       margin-bottom: 10px;
@@ -22,15 +22,14 @@
     }
 
     li.half {
-      width: 49%;
       margin-left: 2%;
       float: left;
       clear: none;
 
       &:first-child {
         margin-left: 0;
+        width: 49%;
       }
-      
     }
     .flat-button{
         margin-top: 0;
@@ -61,12 +60,13 @@
     min-height: 150px;
   }
   text-area[placeholder="Message"]{
-    width: 100%;
+    width: 100% ;
+    margin-left: -10px;
   }
 
   .flat-button {
     color: #f79b26;
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;

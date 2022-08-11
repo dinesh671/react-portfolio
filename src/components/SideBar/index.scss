@@ -1,6 +1,6 @@
 .nav-bar{
     background-color: #181818;
-    width: 60px;
+    width: 80px;
     height: 100%;
     position: absolute;
     top:0;
@@ -78,6 +78,11 @@ nav{
        a.contact-link{
         &::after{
             content: "CONTACT";
+        }
+    }
+    a.project-link{
+        &::after{
+            content: "PROJECTS";
         }
     }
     a.active{
