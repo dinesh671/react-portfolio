@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
+import Card from './card'
 
 function Projects() {
   useEffect(() => {
@@ -14,11 +15,15 @@ function Projects() {
         <div className='text-zone'>
           <h1>
             <AnimatedLetters letterClass={letterClass}
-              strArray={['M', 'y', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't']}
+              strArray={['M', 'y', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't','s']}
               idx={15}
               />
           </h1>
         </div>
+        <div className='Card_wrap'>
+          <Card/>
+        </div>
+        
       </div>
     </>
   )
