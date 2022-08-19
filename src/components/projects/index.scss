@@ -1,0 +1,18 @@
+.project-page{
+     display: flex;
+     //flex-direction: column;
+     justify-content:space-between;
+     align-items: center;
+     .Card_wrap{
+          justify-content: center;
+          align-items: center;
+          margin-top: 50px;
+          width: 960px;
+          height: 380px;
+          //width: 60%;
+          position: relative;
+          left: 15%;
+          right: 90%;
+          top: 8%;
+     }
+}

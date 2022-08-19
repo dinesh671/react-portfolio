@@ -1,58 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 .Card{
-     position: relative;
-     left: 50%;
-     max-width: 400px;
-     //height: 450px;
-     background-color:#011f30;
-     border-radius: 10px;
+     background: #011F30;
+     border-radius: 15px;
+     width: 960px;
+     height: 380px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
      img{
-          width: 100%;
-          height: 50%;
-          border-radius: 10px 10px 0 0;
-
+          height: 100%;
+          width: 480px;
+          border-radius: 15px 0px 0px 15px;
      }
-     .Card-title{
-          color: #ffff;
+     .card-content{
+          padding: 40px;
+          color: #fff;
           font-family: 'Inter', sans-serif;
-          margin-left: 10px;
-          font-size: 25px;
-     }
-     .description{
-          color: rgb(187, 187, 187);
-          font-family: 'Inter', sans-serif;
-          margin-left: 10px;
-          font-size: 15px;
-     }
-     .button{
-          font-family: 'Inter', sans-serif;
-          color: rgb(0, 99, 228);
-          margin: 1rem 0 1rem 10px;
           
-          font-size: 16px;
-          text-decoration: none;
-          display: inline-block;
-          font-weight: bold;
-          padding: .5rem;
-          position: relative;
-          clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
-          
-          &:hover{
-               cursor: pointer;
+          .Card-title{
+               font-weight: 700;
+               line-height: 50px;
+               font-size: 40px;
+               text-transform: capitalize;
           }
-
-          &:before, &:after{
-               position: absolute;
-               content: "";
-               border-bottom: 3px solid;
-               border-radius: 1em;
-               bottom: .3em;
-               transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+          .description{
+               font-size: 15px;
+               line-height: 23px;
+               letter-spacing: 0.01em;
+               color: #CCCCCC;
           }
-           &:before{
-               width: 1em;
-               transform-origin: left;
+          .button{
+                    color: rgb(0, 99, 228);
+                    font-size: 15px;
+                    text-decoration: none;
+                    margin-top: 1rem;
+                    display: inline-block;
+                    font-weight: bold;
+                    padding: .5rem;
+                    margin-left: -.5rem;
+                    position: relative;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+               &:before, &:after{
+                    position: absolute;
+                    content: "";
+                    border-bottom: 3px solid;
+                    border-radius: 1em;
+                    bottom: .3em;
+                    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+               }
+               &:before{
+                    width: 1em;
+                    transform-origin: left;
 
                }
                &:after{
@@ -65,8 +64,11 @@
 
                }
                &:hover::after {
-               transform: translateX(0);
+                    transform: translateX(0);
 
-          }
-     }
+               }
+               
+               }
+
+               }
 }

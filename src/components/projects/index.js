@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import Card from './card'
+//import Card from './card'
+import SimpleSlider from './carosel'
+import './index.scss'
+
+
 
 function Projects() {
   useEffect(() => {
@@ -20,10 +24,11 @@ function Projects() {
               />
           </h1>
         </div>
-        <div className='Card_wrap'>
-          <Card/>
+        <div
+          className='Card_wrap'>
+          <SimpleSlider></SimpleSlider>
         </div>
-        
+
       </div>
     </>
   )
