@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import imageTitle from "../../assets/images/logo-s.svg"
+import imageTitle from "../../assets/images/logo-L.png"
 import AnimatedLetters from "../AnimatedLetters";
 import './index.scss'
 import Logo from "./Logo";
@@ -33,7 +33,7 @@ const Home =()=>{
                     <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={15}/>
                 </h1>
                 <h2>Student / Frontend developer / UI designer</h2>
-                <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                <Link to="/projects" className="home-button">Checkout my work</Link>
             </div>
             <Logo/>
         </div>

@@ -1,6 +1,6 @@
 .nav-bar{
     background-color: #181818;
-    width: 60px;
+    width: 80px;
     height: 100%;
     position: absolute;
     top:0;
@@ -75,6 +75,11 @@ nav{
             content: "ABOUT";
         }
     }
+    a.project-link{
+        &::after{
+            content: "PROJECT";
+        }
+    }
        a.contact-link{
         &::after{
             content: "CONTACT";
@@ -100,8 +105,11 @@ ul{
         a{
             padding: 7px 0;
             display: block;
-            font-size: 15px;
+            font-size:15px;
             line-height: 16px;
+            .icon-size{
+                height: 20px;
+            }
             &:hover svg{
                 color: #f79b26;
 

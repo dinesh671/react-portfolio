@@ -1,10 +1,11 @@
 import './index.scss';
 import SideBar from "../SideBar/index"
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 const Layout =()=>{
     return(
         <div className='App'>  
-            <SideBar/>
+            <SideBar />
+                <Link to="/contact" className="flat-button">CONTACT ME</Link>
             <div className='page'>
                 <span className='tags top-tags'>&lt;body&gt;</span>
 
