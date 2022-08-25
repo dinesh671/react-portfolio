@@ -12,6 +12,7 @@
           height: 100%;
           width: 480px;
           border-radius: 15px 0px 0px 15px;
+          background-color: #fff;
      }
      .card-content{
           padding: 40px;
@@ -23,6 +24,8 @@
                line-height: 50px;
                font-size: 40px;
                text-transform: capitalize;
+               color: #fff;
+               text-decoration: none;
           }
           .description{
                font-size: 15px;

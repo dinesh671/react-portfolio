@@ -27,7 +27,7 @@ const Contact = ()=>{
                     don't hesitate to contact me using below form either.
                 </p>
                 <div class="contact-form">
-                    <form action="">
+                    <form action="https://formspree.io/f/mrgdbgrp" method="POST">
                         <ul>
                             <li class="half">
                                 <input type="text" name="name" placeholder="Name" required/>
@@ -42,7 +42,9 @@ const Contact = ()=>{
                                 <textarea placeholder="Message" required name="message"></textarea>
                             </li>
                             <li className='submit'>
-                                <input type="submit" className="flat-button" value="Send"/>
+                                <button className='flat-button' type="submit">
+                                    submit
+                                </button>
                             </li>
                         </ul>
                     </form>

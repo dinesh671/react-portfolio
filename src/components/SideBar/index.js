@@ -46,7 +46,7 @@ function SideBar(){
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/dinesh_kumar_671/">
+                <a target="_blank" rel="noreferrer" href="https://codepen.io/dinesh671">
                     <FontAwesomeIcon className='icon-size' icon={faCodepen} color="#4d4d4e"/>
                 </a>
             </li>

@@ -1,21 +1,22 @@
 import React from 'react'
+//import { Link } from 'react-router-dom'
 import './index.scss'
 
-function Card({thambnail, title, description}) {
+function Card({thambnail, title, description, path}) {
   return (
     <div className='Card'>
           <img src={thambnail} alt=''/>
-          <div className='card-content'>
-               <h1 className='Card-title'>Social Media Dash Board</h1>
+            <div className='card-content'>
+                 <a href={path} target = "_blank" rel="noreferrer" >
+                    <h1 className='Card-title'> {title}</h1>
+                 </a>
                <div className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-               </div>
-               <div className='button'>
-                    View more
+                    {description}
                </div>
           </div>
      </div>
   )
 }
 
+// onClick={()=>{window.location.pathname= "/home"}}
 export default Card
