@@ -39,12 +39,6 @@ export default class SimpleSlider extends Component {
             path="https://music-app-712.pages.dev/"
             />
           </div>
-          <div>
-            <Card/>
-          </div>
-          <div>
-            <Card/>
-          </div>
         </Slider>
       </div>
     );

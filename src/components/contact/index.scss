@@ -29,7 +29,6 @@
       position: relative;
       animation: fadeInUp 2s 2s;
       animation-fill-mode: forwards;
-      
     }
 
     li.half {
@@ -117,11 +116,11 @@
   position: relative;
   left: 50%;
   top: 20%;
-  animation: fadeInUp 2s 2s;
-  animation-fill-mode: forwards;
+  
   img{
     width: 70%;
     height: 60%;
-
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
   }
 }
