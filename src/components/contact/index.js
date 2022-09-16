@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import support from "../../assets/images/support.png"
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss'
@@ -41,14 +42,17 @@ const Contact = ()=>{
                             <li className="half">
                                 <textarea placeholder="Message" required name="message"></textarea>
                             </li>
-                            <li className='submit'>
+                            <li className='submit' style={{display:"contents"}} >
                                 <button className='flat-button' type="submit">
                                     submit
                                 </button>
                             </li>
                         </ul>
                     </form>
-                </div>
+                    </div>
+            </div>
+        <div className='illustration'>
+                <img src={ support} alt="" />
             </div>
         </div>
         <Loader type='pacman'/>
